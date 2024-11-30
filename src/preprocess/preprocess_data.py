@@ -54,8 +54,10 @@ def clean_data(data):
     """Clean the dataset."""
     cleaned_data = []
     for record in data:
+        logger.info(f"Original record: {record}")
         if isinstance(record, dict):
-            cleaned_record = {k: clean_text(v) for k, v in record.items() if k in ['*relevant_columns*']}  # Specify relevant columns
+            cleaned_record = {k: clean_text(v) for k, v in record.items()}
+            logger.info(f"Cleaned record: {cleaned_record}")
             cleaned_data.append(cleaned_record)
         else:
             logger.warning(f"Skipping non-dict record: {record}")
@@ -63,7 +65,9 @@ def clean_data(data):
 
 def preprocess():
     data = load_data()
+    logger.info(f"Loaded data count: {len(data)}")
     cleaned_data = clean_data(data)
+    logger.info(f"Cleaned data count: {len(cleaned_data)}")
     # Save the cleaned data for later use
     os.makedirs('../../data/processed/', exist_ok=True)
     with open('../../data/processed/cleaned_data.json', 'w', encoding='utf-8') as f:
