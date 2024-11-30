@@ -1,0 +1,50 @@
+# Ignore node_modules and other dependency folders
+node_modules/
+venv/
+env/
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore data directories and files
+data/raw/
+data/processed/
+
+# Ignore model weights and checkpoints
+src/models/checkpoints/
+src/models/weights/
+
+# Ignore logs
+logs/
+
+# Ignore temporary files
+*.tmp
+*.log
+*.cache
+
+# Ignore any large files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.h5
+*.pickle
+*.pkl
+
+# Ignore the Python virtual environment
+venv/
+__pycache__/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore any other directories or files specific to your environment

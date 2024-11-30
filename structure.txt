@@ -1,0 +1,54 @@
+viviana-ai-fiancee/
+├── data/
+│   ├── raw/
+│   │   ├── movie-corpus/
+│   │   │   ├── conversations.json
+│   │   │   ├── corpus.json
+│   │   │   ├── index.json
+│   │   │   ├── info.parsed.jsonl
+│   │   │   ├── users.json
+│   │   │   └── utterances.jsonl
+│   │   ├── EmotionLines/
+│   │   │   ├── friends/
+│   │   │   │   ├── friends_dev.json
+│   │   │   │   ├── friends_test.json
+│   │   │   │   ├── friends_train.json
+│   │   ├── dailydialog/
+│   │   │   ├── test.csv
+│   │   │   ├── train.csv
+│   │   │   ├── validate.csv
+│   │   ├── Synthetic_Persona_Chat/
+│   │   │   ├── New-Persona-New-Conversations.csv
+│   │   │   ├── Synthetic-Persona-Chat_test.csv
+│   │   │   ├── Synthetic-Persona-Chat_train.csv
+│   │   │   ├── Synthetic-Persona-Chat_valid.csv
+│   │   ├── topical_chat/
+│   │   │   └── topical_chat.csv
+│   ├── processed/
+│   └── datasets/
+├── src/
+│   ├── models/               # Model training scripts and saved models
+│   ├── preprocess/           # Data preprocessing scripts
+│   ├── utils/                # Utility functions and helpers
+│   ├── inference/            # Scripts for running model inference
+│   ├── conversation/         # Conversation management scripts
+│   ├── nlp/                  # NLP tasks like intent recognition, entity extraction
+│   └── dialog/               # Dialogue management and state tracking
+├── notebooks/
+│   ├── EDA/                  # Exploratory data analysis notebooks
+│   └── experiments/          # Jupyter notebooks for experiments and trials
+├── tests/                    # Unit tests and integration tests
+├── deployments/
+│   ├── api/                  # API scripts for deploying the model
+│   ├── web/                  # Front-end code for the web interface
+│   └── mobile/               # Code for mobile app interface
+├── docs/
+│   ├── images/               # Project-related images
+│   └── manuals/              # User manuals and technical documentation
+├── scripts/
+│   ├── setup.sh              # Setup and installation scripts
+│   └── run.sh                # Scripts to run the project
+├── README.md                 # Project description and usage instructions
+├── LICENSE                   # Project license (Apache License 2.0)
+├── requirements.txt          # List of dependencies and libraries
+└── .gitignore                # List of files and directories to ignore in version control
